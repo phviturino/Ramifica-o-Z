@@ -22,4 +22,29 @@ header nav a:hover {
     color: #333;
 }
 
+/*imagem da logo grande*/
+.destaque-central { 
+    display: flex;/*ativar o alianhamento de txt flexivel*/
+    justify-content: center; /*centraliza na horizontal*/
+    align-items: center; /*centraliza na vertical*/
+    min-height: 80vh; /*define a altura de seção*/
+    flex-direction: column; /*faz obotão ficar embaixo da img*/
+    gap: 20px; /*espaço entre a img e o botao*/
 }
+.logo-grande { /*largura da img*/
+    width: 400px;
+    height: auto; /*altura*/
+    display: block; /*faz se comportar como um bloco*/
+}
+.btn-jogar {
+    background-color: #6a49a8; /*cor do fundo*/
+    color: white; /*cor da letra*/
+    padding: 15px 40px; /*espaço interno*/
+    border: none; /*remove a borda padrao do navegador*/
+    border-radius: 8px; /*arredonda os cantos do botao*/
+    font-size: 20px; /*aumenta o tamanho da letra*/
+    cursor: pointer; /*muda o desenho do mause para a maozinha ao passar encima*/
+    transition: 0.3s; /*transição*/
+    margin-top: 10px; /*cria uma margem externa no topo*/
+}
+.btn-jogar:hover
