@@ -1,19 +1,26 @@
 body {
     font-family: Arial, Verdana, tahoma;
     margin: 0;
+    background-color: #ffffff;
+    color:#333333;
+    transition: 0.3s;   
+}
+body.escuro {
+    background-color: #0b0e14;
+    color: #ffffff;
 }
 header {
     display: flex; 
     justify-content: space-between; /* logo para a esquerda e o menu a direita*/
-    width: 100%;
-    height: auto;
+    align-items: center;
+    height: 100%;
     background-color: #fff;
     box-shadow: 1px 1px 5px #ccc;
-    padding: 10px;
+    padding: 30px;
     box-sizing: border-box;
 }
 header img {
-    height: 200px;
+    height: 125px;
     width: auto;
 }
 header nav {
@@ -58,4 +65,15 @@ header nav a:hover {
     background-color: #3a4685; /*cor de fundo*/
     transform: scale(1.1); /*efeito de zoom*/
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /*aumenta a sombra*/
+}
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.material-symbols-outlined {
+    cursor: pointer; /*maozinha*/
+    font-size: 30px; /*tamanho do icone*/
+    user-select: none; /*impede que use o txt*/
+    transition: 0.3s; 
 }
