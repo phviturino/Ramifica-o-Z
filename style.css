@@ -13,11 +13,14 @@ header {
     display: flex; 
     justify-content: space-between; /* logo para a esquerda e o menu a direita*/
     align-items: center;
-    height: 100%;
+    height: 125px;
     background-color: #fff;
     box-shadow: 1px 1px 5px #ccc;
-    padding: 30px;
+    padding: 0 30px;
     box-sizing: border-box;
+    position: sticky; /* deixa o cabeçario fixo*/
+    top: 0;
+    z-index: 1000;
 }
 header img {
     height: 125px;
@@ -63,17 +66,21 @@ header nav a:hover {
 }
 .historia-jogo {
     text-align: center;
-    padding: 50px 20px;
+    padding: 60px 20px;
+    font-size: 23px;
+    line-height: 1.8;
     background-color: rgba(255, 255, 255, 0.3);
 }
 
 .historia-jogo h2 {
+    font-weight: 700;
     font-size: 28px;
     text-align: center;
     margin-bottom: 20px;
     text-transform: uppercase;
     color: #1a2a6c;
 }
+
 .btn-jogar:hover {
     background-color: #3a4685; /*cor de fundo*/
     transform: scale(1.1); /*efeito de zoom*/
@@ -119,4 +126,19 @@ figcaption {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.rodape {
+    text-align: center;
+    background-color: #111;
+    color: white;
+    padding: 40px 0;
+    font-family: 'lato' sans-serif;
+}
+.sociais a {
+    font-size: 35px;
+    margin: 0 15px;
+    transition: 0.3s;
+    display: inline-block;
+    color: #ffffff;
+
 }
