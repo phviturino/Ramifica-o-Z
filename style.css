@@ -14,7 +14,7 @@ body.escuro {
 }
 header {
     display: flex; 
-    justify-content: space-between; /* logo para a esquerda e o menu a direita*/
+    justify-content: flex-start; /* logo para a esquerda e o menu a direita*/
     align-items: center;
     height: 125px;
     background-color: #fff;
@@ -24,6 +24,9 @@ header {
     position: sticky; /* deixa o cabeçario fixo*/
     top: 0;
     z-index: 1000;
+}
+nav{
+    margin-left: auto;
 }
 header img {
     height: 125px;
@@ -180,7 +183,14 @@ body.modo-escuro .controles-container i {
     border-top: 1px solid #333;
 
 /*galeria*/
-
+header {
+    gap: 30px;
+    display: flex;               /*organização linha */
+    justify-content: flex-start;
+    align-items: center;         /* Alinha todo na mesma altura */
+    padding: 10px 5%;            
+    width: 100%;
+}
 }
 .secao-galeria {/*ajuste imagens galeria*/
     padding: 40px 20px;
