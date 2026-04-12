@@ -178,6 +178,9 @@ body.modo-escuro .controles-container i {
 }body.modo-escuro .rodape {
     background-attachment: #000000;
     border-top: 1px solid #333;
+
+/*galeria*/
+
 }
 .secao-galeria {/*ajuste imagens galeria*/
     padding: 40px 20px;
@@ -204,7 +207,7 @@ body.modo-escuro .controles-container i {
     box-sizing: border-box; 
 }
 
-/* ISSO AQUI é o que vai domar a imagem gigante */
+/* ajusta a imagem */
 .foto-item img {
     width: 100% !important; 
     height: 250px !important; 
@@ -219,4 +222,90 @@ body.modo-escuro .controles-container i {
     font-weight: bold;
     margin-bottom: 10px;
     text-align: center;
+}
+.btn-jogar {
+    display: block;
+    margin: 30px auto;
+    padding: 15px 40px;
+}
+body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* pagina de contato*/
+
+.corpo-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    min-height: 100vh;
+}
+.logo-contato {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px; /*espaço margem e formulário*/
+    width: 100%;
+}
+.logo-contato img {
+    width: 250px;
+    height: auto;
+}
+.card-feedback {
+    background-color: #121214;
+    color: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column; /*um em baixo do outro*/
+    align-items: stretch; /*alinha o campo de preenchimento*/
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border: 1px solid #8a2be2;
+    box-shadow: 0 0 20px rgba(138, 43, 226, 0.4);
+}
+.input-grupo {
+    width: 100%;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+}
+.input-grupo input,
+.input-grupo textarea {
+    width: 100%;
+    padding: 20px;
+    font-size: 18px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+.btn-jogar-topo {
+    background-color: #8a2be2;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(138, 43, 226, 0.5);
+}
+.btn-jogar-topo:hover {
+    background-color: #a855f7;
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.8);
+}
+header {
+    gap: 30px;
+    display: flex;               /*organização linha */
+    justify-content: flex-start;
+    align-items: center;         /* Alinha todo na mesma altura */
+    padding: 10px 5%;            
+    width: 100%;
+}
+nav {
+    margin-left: auto;
 }
