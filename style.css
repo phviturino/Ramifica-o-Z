@@ -179,3 +179,44 @@ body.modo-escuro .controles-container i {
     background-attachment: #000000;
     border-top: 1px solid #333;
 }
+.secao-galeria {/*ajuste imagens galeria*/
+    padding: 40px 20px;
+    text-align: center;
+}
+/* Isso organiza a grade */
+.grade-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    width: 100%; /* Garante que a grade use a tela toda */
+}
+
+/* Isso controla o tamanho da "caixinha" onde a foto fica */
+.foto-item {
+    width: 45%;     
+    min-width: 300px;
+    background-color: #000;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    padding: 10px;
+    box-sizing: border-box; 
+}
+
+/* ISSO AQUI é o que vai domar a imagem gigante */
+.foto-item img {
+    width: 100% !important; 
+    height: 250px !important; 
+    object-fit: cover;       
+    border-radius: 10px;
+    display: block;
+}
+
+/* Texto acima da foto */
+.titulo-foto {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
