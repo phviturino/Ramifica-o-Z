@@ -26,7 +26,6 @@ window.onload = function() {
 
 if (botaoRedefinir) {
     botaoRedefinir.onclick = function() {
-        // Limpa TUDO para o professor testar do zero
         localStorage.clear(); 
         window.location.reload();
     };
@@ -55,14 +54,13 @@ if (botaoRedefinir) {
             }
         }
     }
-    // 2. EXIBIÇÃO: Esta parte roda SEMPRE que houver um nome salvo ou novo
     if (elementoSaudacao && nomeSalvo) {
         elementoSaudacao.textContent = "Bem-vindo soldado " + nomeSalvo + "!";
     }
 
     // 3. VERIFICAÇÃO DE ANO
     const anoAtual = new Date().getFullYear();
-    if (anoAtual === 2026) {
+    if (anoAtual === 2026 && (window.location.pathname.endsWith("index.html") || window.location.pathname === "/")) {
         alert("Ano de Grande Lançamento: Realidade Z está On!");
     }
     // --- FICHA TÉCNICA DO JOGO ---

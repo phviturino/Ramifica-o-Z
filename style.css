@@ -14,9 +14,9 @@ body.escuro {
 }
 header {
     display: flex; 
-    justify-content: flex-start; /* logo para a esquerda e o menu a direita*/
+    justify-content: flex-start; 
     align-items: center;
-    height: 125px;
+    min-height: 80px;
     background-color: #fff;
     box-shadow: 1px 1px 5px #ccc;
     padding: 0 30px;
@@ -84,7 +84,7 @@ header nav a:hover {
     text-align: center;
     margin-bottom: 20px;
     text-transform: uppercase;
-    color: #1a2a6c;
+    color: #519de5;
 }
 
 .btn-jogar:hover {
@@ -196,7 +196,7 @@ header {
     padding: 40px 20px;
     text-align: center;
 }
-/* Isso organiza a grade */
+/*organiza a grade */
 .grade-galeria {
     display: flex;
     flex-wrap: wrap;
@@ -205,8 +205,6 @@ header {
     padding: 20px;
     width: 100%; /* Garante que a grade use a tela toda */
 }
-
-/* Isso controla o tamanho da "caixinha" onde a foto fica */
 .foto-item {
     width: 45%;     
     min-width: 300px;
@@ -220,8 +218,8 @@ header {
 /* ajusta a imagem */
 .foto-item img {
     width: 100% !important; 
-    height: 250px !important; 
-    object-fit: cover;       
+    height: auto !important; 
+    object-fit: contain;       
     border-radius: 10px;
     display: block;
 }
@@ -346,7 +344,7 @@ nav {
     padding: 20px;
     margin: 20px auto;
     max-width: 500px;               /* Não deixa o texto espalhado */
-    box-shadow: 0 0 15px rgba(0, 212, 255, 0.3); /* Brilho neon */
+    box-shadow: 0 0 15px rgba(148, 21, 203, 0.3); /* Brilho neon */
     font-family: 'Courier New', Courier, monospace; /* Fonte estilo código */
 }
 
@@ -365,7 +363,7 @@ nav {
 }
 
 .info-jogo span {
-    color: #00ff88; /* Os dados em verde (estilo Matrix/Terminal) */
+    color: #8a2be2; /* Os dados em verde (estilo Matrix/Terminal) */
     font-weight: bold;
     float: right; /* Alinha os dados na direita pra ficar organizado */
 }
@@ -376,8 +374,8 @@ nav {
     width: 200px;
     margin: 30px auto;
     padding: 15px;
-    background: #00d4ff;
-    color: #000;
+    background: #8a2be2;
+    color: white;
     text-align: center;
     font-weight: bold;
     text-decoration: none;
@@ -388,7 +386,8 @@ nav {
 }
 
 .btn-jogar:hover {
-    background: #00ff88;
+    background: rgba(138, 43, 226, 0.5);
+    color: white;
     transform: scale(1.05);
 }
 .logo-grande {
