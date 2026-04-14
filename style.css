@@ -1,7 +1,12 @@
 html {
     scroll-behavior: smooth;
 }
+@keyframes fadeIN { /*define animação*/
+    from { opacity: 0; }
+    to {opacity: 1; }
+}
 body {
+    animation: fadeIN 1s ease-in-out; /*transição*/
     font-family: 'lato', sans-serif;
     margin: 0;
     background-color: #ffffff;
