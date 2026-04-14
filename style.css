@@ -75,7 +75,6 @@ header nav a:hover {
     padding: 60px 20px;
     font-size: 23px;
     line-height: 1.8;
-    background-color: rgba(255, 255, 255, 0.3);
 }
 
 .historia-jogo h2 {
@@ -127,7 +126,7 @@ nav {
     display: block;
     margin-bottom: 10px;
 }
-figcaption {
+figcaption { /*legenda de img / icones*/
     font-weight: bold;
     font-size: 1.2rem;
     text-transform: uppercase;
@@ -162,23 +161,27 @@ figcaption {
     align-items: center;
 }
 body.modo-escuro {
-    background-color: #121212;
+    background-color: #1e1e1e;
     color: #e0e0e0;
 }
 body.modo-escuro nav a {
     color: #00d4ff;
 }
 body.modo-escuro section {
-    background-color: #121212;
+    background-color: #1e1e1e;
     border: 1px solid #333;
 }
 body.modo-escuro header {
-    background-color: #121212;
+    background-color: #1e1e1e;
     border-bottom: 1px solid #333;
 }
 body.modo-escuro .controles-container i {
     color:#ffffff !important;
-}body.modo-escuro .rodape {
+}
+.modo-escuro figcaption {
+    color: white;
+}
+body.modo-escuro .rodape {
     background-attachment: #000000;
     border-top: 1px solid #333;
 
