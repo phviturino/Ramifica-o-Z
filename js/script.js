@@ -33,6 +33,7 @@ if (botaoRedefinir) {
 // --- SAUDAÇÃO E RECRUTAMENTO ---
     const elementoSaudacao = document.getElementById('mensagem-saudacao');
     let nomeSalvo = localStorage.getItem('nomeSoldado');
+    let idadeSalva = localStorage.getItem('idadeSoldado')
 
     // 1. Se NÃO tem nome, faz as perguntas (SÓ UMA VEZ)
     if (elementoSaudacao && !nomeSalvo) {
@@ -42,20 +43,26 @@ if (botaoRedefinir) {
             nomeSalvo = nomeInput; // Atualiza para usar na frase abaixo
 
             let idade = prompt("Soldado " + nomeInput + ", qual a sua idade?");
+            localStorage.setItem("idadeSoldado", idade);
             if (idade >= 12) {
                 alert("Ótimo, você será enviado à Capital da Realidade Z!");
             } else {
                 alert("Soldado, você será enviado para a zona B da Realidade Z!");
 
-                    const boxSocial = document.getElementById('redes-sociais');
-            if (parseInt(idade) < 12 && boxSocial) {
-                boxSocial.style.display = "none";  
+                    const boxSocial = document.getElementById('sociais');
+              {
+                boxSocial.classList.add('idade-borrada')
             }
             }
         }
     }
     if (elementoSaudacao && nomeSalvo) {
         elementoSaudacao.textContent = "Bem-vindo soldado " + nomeSalvo + "!";
+    }
+    const boxSocial = document.getElementById("sociais");
+
+    if (idadeSalva && parseInt(idadeSalva) < 12 && boxSocial) {
+        boxSocial.classList.add("idade-borrada");
     }
 
     // 3. VERIFICAÇÃO DE ANO

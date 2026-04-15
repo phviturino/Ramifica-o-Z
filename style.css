@@ -339,13 +339,6 @@ nav {
     margin-top: 10px;
     transition: 0.3s;
 }
-.form-escondido {
-    display: none !important;
-}
-.esconder-social {
-    display: none !important;
-}
-
 /*sobre*/
 
 .info-jogo {
@@ -406,4 +399,10 @@ nav {
     max-width: 80%;
     height: auto;
     margin: 0 auto;
+}
+.idade-borrada {
+    filter: blur(10px);
+    pointer-events: none;
+    user-select: none;
+    transition: 0.5s;
 }
